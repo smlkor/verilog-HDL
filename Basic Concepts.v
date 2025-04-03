@@ -31,3 +31,6 @@ buf (out1, 1'b1); // out1 = 0
 
 buf (out2, 1'b0); // out2 = 1
 buf (out2, 1'b1); // out2 = 1
+
+//System Tasks
+$display("Hello Verilog World");
