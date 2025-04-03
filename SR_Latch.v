@@ -17,7 +17,7 @@ module Top;
 
   initial
     begin
-      $monior($time, "set = %b, reset = %b, q = %b\n", set, reset, q);
+      $monitor($time, "set = %b, reset = %b, q = %b\n", set, reset, q);
       
       set = 0;
       reset = 0;
@@ -26,5 +26,5 @@ module Top;
       #5 reset = 0;
       #5 set = 1;
     end
-  
+
 endmodule
