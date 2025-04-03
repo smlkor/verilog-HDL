@@ -22,13 +22,14 @@ module D_FF(q, d, clk, reset);
     input d, clk, reset;
     reg q;
     
-    always @(posedge reset or negedge clk)
+    always @(/*posedge reset or */negedge clk)
         if (reset)
             q <= 1'b0;
         else
             q <= d;
 endmodule
 
+/*
 module stimulus;
     reg clk;
     reg reset;
@@ -52,3 +53,4 @@ initial
     $monitor($time, " Output q = %d", q);
     
 endmodule
+*/
