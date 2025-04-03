@@ -44,3 +44,5 @@ module stimulus;
       #1 $display("S1 = %b, S0 = %b, OUTPUT = %b \n", S1, S0, OUTPUT);
     end
 endmodule
+
+//4bit ripple carry full adder
