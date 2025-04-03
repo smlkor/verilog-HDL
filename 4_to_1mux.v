@@ -45,4 +45,3 @@ module stimulus;
     end
 endmodule
 
-//4bit ripple carry full adder
